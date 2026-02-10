@@ -17,4 +17,5 @@ Une application minimale, utilisant la bibliothèque SFML.
 
 - [Tutorials for SFML 3.0](https://www.sfml-dev.org/tutorials/3.0/)
 - [SFML Documentation](https://www.sfml-dev.org/documentation)
+- [sf::WindowBase::handleEvents](https://www.sfml-dev.org/tutorials/3.0/getting-started/migrate/#sfwindowbasehandleevents)
 
