@@ -35,11 +35,6 @@ int main(int, char ** argv) {
   // create the clock
   sf::Clock clock;
 
-  // exemple d'utilisation de clock (TODO à supprimer):
-  sf::Time elapsed = clock.restart();
-  double dt = elapsed.asSeconds();
-  std::cout << "Elapsed time: " <<  dt << "s." << std::endl;
-
   // create the game
   // TODO
 
