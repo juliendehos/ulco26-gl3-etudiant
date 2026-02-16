@@ -27,7 +27,7 @@ int main(int, char ** argv) {
 
   // fenêtre principale
   sf::RenderWindow window(sf::VideoMode({600, 300}), myTitle, sf::Style::Close);
-  window.setVerticalSyncEnabled(true);
+  window.setFramerateLimit(60);
   window.setPosition({50, 50});
 
   // TODO

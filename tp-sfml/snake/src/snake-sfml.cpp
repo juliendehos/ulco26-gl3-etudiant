@@ -29,7 +29,7 @@ int main(int, char ** argv) {
 
   // window
   sf::RenderWindow window(sf::VideoMode({gWinWidth, gWinHeight}), "snake", sf::Style::Close);
-  window.setVerticalSyncEnabled(true);
+  window.setFramerateLimit(60);
   window.setPosition({50, 50});
 
   // create the clock
