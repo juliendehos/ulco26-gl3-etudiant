@@ -1,0 +1,54 @@
+
+#include <gtkmm.h>
+
+///////////////////////////////////////////////////////////////////////////////
+// QuitButton
+///////////////////////////////////////////////////////////////////////////////
+
+// TODO class QuitButton 
+
+///////////////////////////////////////////////////////////////////////////////
+// window
+///////////////////////////////////////////////////////////////////////////////
+
+class MyWindow : public Gtk::Window {
+
+  Gtk::Box hbox;
+  Gtk::Label label;
+  // TODO QuitButton quitButton;
+
+  public:
+
+  MyWindow(Gtk::Application & app):
+    hbox(Gtk::Orientation::HORIZONTAL),
+    label("hello")
+    // TODO quitButton
+  {
+
+      // configure window
+      set_title("hello-gtkmm-1");
+
+      // main hbox
+      set_child(hbox);
+
+      // label
+      label.set_size_request(150, -1);
+      hbox.append(label);
+
+      // button 
+      // TODO
+
+  }
+
+};
+
+///////////////////////////////////////////////////////////////////////////////
+// application
+///////////////////////////////////////////////////////////////////////////////
+
+int main(int argc, char ** argv) {
+  auto app = Gtk::Application::create();
+  return app->make_window_and_run<MyWindow>(argc, argv, *app);
+}
+
+
