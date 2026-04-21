@@ -29,16 +29,16 @@ int main(int, char ** argv) {
   const std::string appleFilename = dataDir + "apple-32.png";
   const sf::Color bgColor(80, 80, 80, 255);
 
+  // game data
+  Game game(appleFilename, gNbWidth, gNbHeight, gCellSize, gTimeStep);
+
   // window
   sf::RenderWindow window(sf::VideoMode({gWinWidth, gWinHeight}), "snake", sf::Style::Close);
   window.setFramerateLimit(60);
   window.setPosition({50, 50});
 
-  // game data
-  Game game(appleFilename, gNbWidth, gNbHeight, gCellSize, gTimeStep);
-  sf::Clock clock;
-
   // main loop
+  sf::Clock clock;
   while (window.isOpen()) {
 
     // handle events

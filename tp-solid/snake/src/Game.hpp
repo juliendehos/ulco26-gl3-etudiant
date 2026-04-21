@@ -100,8 +100,12 @@ class Game {
     int getScore() const;
 
     void changeDirection(Direction direction);
-    std::tuple<bool, bool> update(double elapsed);
     void draw(sf::RenderWindow & window);
+
+    std::tuple<bool, bool> update(double elapsed);
+    // returns 2 booleans:
+    // - the snake eats an apple
+    // - the snake bumps into a wall
 
   private:
     void resetApple();
