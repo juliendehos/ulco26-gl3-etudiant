@@ -15,6 +15,7 @@ Application web permettant de gérer un annuaire de personne (nom, prénom, ann�
 ## Références
 
 - [libhv](https://github.com/ithewei/libhv)
+- [DeepWiki libhv](https://deepwiki.com/ithewei/libhv)
 - [libhv http server](https://github.com/ithewei/libhv/blob/master/examples/http_server_test.cpp)
 - [JSON for Modern C++](https://github.com/nlohmann/json)
 
