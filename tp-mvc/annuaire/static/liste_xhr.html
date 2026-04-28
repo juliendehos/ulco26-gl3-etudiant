@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet" />
+    <title>Annuaire </title>
+  </head>
+
+  <body>
+    <h1>Annuaire </h1>
+
+    <h2>Liste (XHR)</h2>
+
+    <ul id="mylist"></ul>
+
+    <script>
+
+      function addItem(p) {
+        const li = document.createElement('li');
+        li.innerText = `${p.lastname}, ${p.firstname} (${p.year}): ${p.tel}`;
+        mylist.appendChild(li);
+      }
+
+      fetch("api/annuaire")
+        .then(response => response.json())
+        .then(personnes => personnes.forEach(addItem));
+
+    </script>
+
+  </body>
+
+</html>
+
+
