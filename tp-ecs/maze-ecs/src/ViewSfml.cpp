@@ -42,6 +42,8 @@ void ViewSfml::draw() {
   // TODO draw player
 
   // TODO draw level
+  _levelText.setString("TODO");
+  _window.draw(_levelText);
 
   // render
   _window.display();
