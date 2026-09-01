@@ -6,9 +6,14 @@
 Application web implémentant un forum basique (discussion, auteur, message).
 
 
+## Fonctionnalités
+
+TODO
+
+
 ## Planning
 
-TODO faire un planning puis le réaliser (en mettant à jour la conception ci-dessous et en faisant des commit/push réguliers)
+TODO
 
 
 ## Conception
