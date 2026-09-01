@@ -8,13 +8,14 @@ std::string renderHtml(const Annuaire & annuaire) {
   std::string page;
 
   // TODO
-  page += R"(
+  page +=
+R"(
 <!DOCTYPE html>
 <html lang="fr">
 
   <head>
     <meta charset="utf-8">
-    <link href="style.css" rel="stylesheet" />
+    <link href="/style.css" rel="stylesheet" />
     <title>Annuaire</title>
   </head>
 
