@@ -8,12 +8,19 @@ Application web implémentant un forum basique (discussion, auteur, message).
 
 ## Fonctionnalités
 
-TODO
+- serveur web avec génération dynamique des pages HTML (SSR)
+- représenter des discussions (1 discussion = 1 sujet + des messages)
+- représenter des messages (1 message = auteur + contenu), rattachés aux discussions
+- ajouter de nouvelles discussions
+- ajouter de nouveaux messages
 
 
 ## Planning
 
-TODO
+- [ ] TODO
+
+(conseil : dans un 1er temps, implémenter des discussions sans message avec
+affichage + ajout, puis implémenter les messages plus tard)
 
 
 ## Conception
@@ -33,7 +40,6 @@ Forum =
     TODO
 
 mkForumTest()
-    TODO
 
 View =
     TODO
