@@ -9,10 +9,18 @@ Interface console + interface graphique.
 
 Joueurs humains ou IA (random, Monte Carlo).
 
+## Fonctionnalités
+
+- TODO
+
 ## Planning
 
-- [ ] faire la conception demandée dans le sujet de TP
-- [ ] faire un planning du développement puis le réaliser
+- [ ] TODO
+
+## Conception
+
+- TODO
+
 
 ## Références
 

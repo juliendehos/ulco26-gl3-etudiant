@@ -11,13 +11,23 @@ enum class Status { Play1, Play2, Win1, Win2, Tie };
 
 enum class Cell { Player1, Player2, Empty };
 
+class Board {
+  private:
+    std::array<Cell, N_ROWS*N_COLS> _cells;
+
+  public:
+    Cell cell(int i, int j) const;
+    Cell & cell_(int i, int j);
+    void newBoard();
+};
+
 class Game {
 
   private:
 
-    Status _currentStatus;
+    Status _status;
     Status _firstStatus;
-    std::array<Cell, N_ROWS*N_COLS> _board;
+    Board _board;
     std::array<int, N_COLS> _heights;
     int _nMoves;
 
@@ -27,17 +37,19 @@ class Game {
 
     void newGame();
 
-    Status getStatus() const;
+    // Returns the current game status.
+    Status status() const;
 
-    // assumes the position (i, j) is valid
-    Cell getCell(int i, int j) const;
-
+    // Returns if the current game is running (i.e. Status::Play1 or Status::Play2).
     bool isRunning() const;
 
-    // returns true is the move j has been played 
-    bool play(int j);
+    // Returns the cell at the position (i, j). Assumes the position is valid.
+    Cell cell(int i, int j) const;
 
-    // for AI
+    // Play a move. Returns true is the move j has been successfully played.
+    bool playMove(int j);
+
+    // Compute the valid moves of the current game. Useful for AI players.
     std::vector<int> computeValidMoves() const;
 
   private:

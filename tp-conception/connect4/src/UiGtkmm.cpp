@@ -34,7 +34,7 @@ void MyDrawingArea::on_draw(const Cairo::RefPtr<Cairo::Context>& cr, int width, 
   for (int i=0; i<N_ROWS; i++) {
     for (int j=0; j<N_COLS; j++) {
       // color
-      const Cell cell = _window.gameGetCell(i, j);
+      const Cell cell = _window.gameCell(i, j);
       if (cell == Cell::Empty)
         continue;
       const auto [r, g, b] = cell == Cell::Player1 ? gPlayer1Color : gPlayer2Color;
@@ -133,13 +133,13 @@ MyWindow::MyWindow() :
 }
 
 void MyWindow::updateMove(int move) {
-  _game.play(move);
+  _game.playMove(move);
   updateStatusLabel();
   _drawingArea.queue_draw();
 }
 
-Cell MyWindow::gameGetCell(int i, int j) const {
-  return _game.getCell(i, j);
+Cell MyWindow::gameCell(int i, int j) const {
+  return _game.cell(i, j);
 }
 
 bool MyWindow::gameIsRunning() const {
@@ -147,7 +147,7 @@ bool MyWindow::gameIsRunning() const {
 }
 
 void MyWindow::updateStatusLabel() {
-  const auto status = _game.getStatus();
+  const auto status = _game.status();
   const auto text = fmtStatus(status);
   _statusLabel.set_text(text);
 }

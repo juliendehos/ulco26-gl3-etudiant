@@ -62,7 +62,7 @@ class MyWindow : public Gtk::Window {
     MyWindow();
 
     void updateMove(int move);
-    Cell gameGetCell(int i, int j) const;
+    Cell gameCell(int i, int j) const;
     bool gameIsRunning() const;
 
   private:
