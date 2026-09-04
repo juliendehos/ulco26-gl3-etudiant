@@ -30,8 +30,8 @@ IdMessage = String
 IdDiscussion = String
 
 Message = 
-    + String auteur
-    + String contenu
+    + String _auteur
+    + String _contenu
 
 Discussion = 
     TODO

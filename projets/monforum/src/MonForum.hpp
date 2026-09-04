@@ -7,3 +7,8 @@
 using IdMessage = std::string;
 using IdDiscussion = std::string;
 
+struct Message {
+  std::string _auteur;
+  std::string _contenu;
+};
+
