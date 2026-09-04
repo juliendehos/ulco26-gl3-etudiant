@@ -8,11 +8,11 @@ Application web implémentant un forum basique (discussion, auteur, message).
 
 ## Fonctionnalités
 
-- serveur web avec génération dynamique des pages HTML (SSR)
-- représenter des discussions (1 discussion = 1 sujet + des messages)
-- représenter des messages (1 message = auteur + contenu), rattachés aux discussions
-- ajouter de nouvelles discussions
-- ajouter de nouveaux messages
+- [ ] serveur web avec génération dynamique des pages HTML (SSR)
+- [ ] représenter des discussions (1 discussion = 1 sujet + des messages)
+- [ ] représenter des messages (1 message = auteur + contenu), rattachés aux discussions
+- [ ] ajouter de nouvelles discussions
+- [ ] ajouter de nouveaux messages
 
 
 ## Planning
