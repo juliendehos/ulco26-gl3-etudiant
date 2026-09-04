@@ -1,0 +1,47 @@
+#pragma once
+
+#include "Game.hpp"
+
+#include <gtkmm.h>
+
+
+///////////////////////////////////////////////////////////////////////////////
+// params
+///////////////////////////////////////////////////////////////////////////////
+
+using Color = std::array<double, 3>;
+
+const std::string gTitle = "reversi";
+const int gPanelWidth = 150;
+const int gCellSize = 50;
+const int gCellSizeValid = 2;
+const Color gBgColor{0.2, 0.8, 0.2};
+const Color gBgEndColor{0.6, 0.6, 0.6};
+const Color gPlayer1Color {0.0, 0.0, 0.0};
+const Color gPlayer2Color {1.0, 1.0, 1.0};
+
+const int gCellSize05 = gCellSize * 0.5;
+const int gGameWidth = N_COLS*gCellSize;
+const int gGameHeight = N_ROWS*gCellSize;
+
+
+///////////////////////////////////////////////////////////////////////////////
+// MyDrawingArea
+///////////////////////////////////////////////////////////////////////////////
+
+class MyWindow;
+
+class MyDrawingArea : public Gtk::DrawingArea {
+  // TODO
+};
+
+
+///////////////////////////////////////////////////////////////////////////////
+// MyWindow
+///////////////////////////////////////////////////////////////////////////////
+
+class MyWindow : public Gtk::Window {
+  // TODO
+};
+
+
