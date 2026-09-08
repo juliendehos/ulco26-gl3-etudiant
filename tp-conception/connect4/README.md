@@ -24,6 +24,12 @@ Joueurs humains ou IA (random, Monte Carlo).
   - [ ] monte carlo avec 10 simulations par coup possible
   - [ ] monte carlo avec 100 simulations par coup possible
 
+- UI console :
+  - [ ] afficher le jeu et saisir les coups, au format texte
+  - [ ] gérer différents types de player (humain, random, mc10, mc100)
+  - [ ] dérouler une partie de jeu complète
+  - [ ] arguments de la ligne de commande
+
 - UI gtkmm :
   - [x] bouton quitter
   - [ ] afficher le jeu
@@ -31,12 +37,6 @@ Joueurs humains ou IA (random, Monte Carlo).
   - [ ] dérouler la partie de jeu
   - [ ] bouton nouveau jeu
   - [ ] listes pour choisir les players 1 et 2
-
-- UI console :
-  - [ ] afficher le jeu et saisir les coups, au format texte
-  - [ ] gérer différents types de player (humain, random, mc10, mc100)
-  - [ ] dérouler une partie de jeu complète
-  - [ ] arguments de la ligne de commande
 
 
 ## Planning
