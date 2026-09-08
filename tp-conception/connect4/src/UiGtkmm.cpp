@@ -31,13 +31,12 @@ void MyDrawingArea::on_draw(const Cairo::RefPtr<Cairo::Context>& cr, int width, 
   }
 
   // cells
-  for (int i=0; i<N_ROWS; i++) {
-    for (int j=0; j<N_COLS; j++) {
+  // TODO
+  {
+      const int i=0;
+      const int j=3;
       // color
-      const Cell cell = _window.gameCell(i, j);
-      if (cell == Cell::Empty)
-        continue;
-      const auto [r, g, b] = cell == Cell::Player1 ? gPlayer1Color : gPlayer2Color;
+      const auto [r, g, b] = gPlayer1Color;
       cr->set_source_rgb(r, g, b);
 
       // draw disk
@@ -45,7 +44,6 @@ void MyDrawingArea::on_draw(const Cairo::RefPtr<Cairo::Context>& cr, int width, 
       double y = (N_ROWS-1-i)*gCellSize + gCellSize05;
       cr->arc(x, y, gCellSize05, 0.0, 2.0 * M_PI);
       cr->fill();
-    }
   }
 
   // grid
@@ -133,7 +131,7 @@ MyWindow::MyWindow() :
 }
 
 void MyWindow::updateMove(int move) {
-  _game.playMove(move);
+  std::cout << "TODO playing: " << move << std::endl;
   updateStatusLabel();
   _drawingArea.queue_draw();
 }
@@ -155,6 +153,6 @@ void MyWindow::updateStatusLabel() {
 void MyWindow::selectPlayer2() {
   const auto selected = _player2Drop.get_selected();
   const std::string selectedString = _player2List->get_string(selected);
-  std::cout << "selected: " << selectedString << std::endl;
+  std::cout << "TODO selected: " << selectedString << std::endl;
 }
 
